@@ -28,6 +28,7 @@ caseInt = 0
 
 online_version = "https://phyoxent.com/behainus/version.txt"
 version_path = "./version.txt"
+version_gui = "0.0.0"
 
 
 # CHECKING VERSION FUNCTION
@@ -37,10 +38,12 @@ def checkVer():
     global start_game_button
     global canPlay
     global caseInt
+    global version_gui
     print("CHECKING VERSION'S...")
     print("LOCAL VERSION")
     with open("version.txt", "r") as file:
         localver = file.read()
+        version_gui = localver
         print(localver)
     response = requests.get(online_version)
     onlinever = response.text
@@ -590,7 +593,7 @@ new_image_2= ImageTk.PhotoImage(resized_image)
 corp_logo_environment.create_image( 10,10, anchor=NW, image=new_image_2)
 
 # ACLARATIVE TEXT
-version_text = Label(start_frame, text=f"Launcher version 0.0.3(0.0.0.0)", bg=DGRAY, fg=CGRAY)
+version_text = Label(start_frame, text=f"Launcher version {version_gui}(0.0.0.0)", bg=DGRAY, fg=CGRAY)
 version_text.place(x=615, y=510)
 version_text = Label(start_frame, text=f"Copyright Phyox LABS™ 2023©", bg=DGRAY, fg=CGRAY)
 version_text.place(x=607, y=530)
@@ -622,7 +625,7 @@ else:
 # INSTALACIÓN
 def init():
     global IsInstall
-
+    
    
     current_directory = os.getcwd()
     print(current_directory)
