@@ -9,5 +9,10 @@ This Launcher was created specifically for the game "Behind Us"
 - [Santiago Fontana](https://www.github.com/santiagofontanaa)
 - [Emiliano Canto](https://www.github.com/gypsy264)
 
+## TESTING APP
 
 ![2023-04-18-01-34-50-_online-video-cutter com_-_1_](https://user-images.githubusercontent.com/79043997/232673066-91941940-6cad-40b8-b1ef-c1b00bdd09e7.gif)
+
+
+### License
+This app was created by Phyox LABS™ 2023© Launcher version 0.0.3(0.0.0.0)
